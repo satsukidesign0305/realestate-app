@@ -15,7 +15,7 @@
 
 /* 画像プレースホルダー */
 .imagePlaceholder {
-  height: 160px;
+  height: 140px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   display: flex;
   align-items: center;
@@ -23,7 +23,7 @@
 }
 
 .icon {
-  font-size: 3rem;
+  font-size: 2.75rem;
   opacity: 0.85;
 }
 
@@ -44,7 +44,7 @@
   margin: 0 0 0.75rem;
 }
 
-/* 間取り・面積バッジ */
+/* 間取りバッジ */
 .badges {
   display: flex;
   gap: 0.5rem;
@@ -67,6 +67,7 @@
   justify-content: space-between;
   padding-top: 1rem;
   border-top: 1px solid #f0f0f0;
+  margin-bottom: 1rem;
 }
 
 .rentLabel {
@@ -78,4 +79,45 @@
   font-size: 1.1rem;
   font-weight: 700;
   color: #e53e3e;
+}
+
+/* 編集・削除ボタン行 */
+.cardActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.editButton,
+.deleteButton {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* 編集ボタン: アウトラインスタイル */
+.editButton {
+  background: transparent;
+  color: #4299e1;
+  border: 1.5px solid #4299e1;
+}
+
+.editButton:hover {
+  background: #4299e1;
+  color: white;
+}
+
+/* 削除ボタン: アウトラインスタイル */
+.deleteButton {
+  background: transparent;
+  color: #e53e3e;
+  border: 1.5px solid #e53e3e;
+}
+
+.deleteButton:hover {
+  background: #e53e3e;
+  color: white;
 }

@@ -1,0 +1,127 @@
+/* 物件登録・編集モーダルのスタイル */
+
+/* 画面全体を覆うオーバーレイ */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 1rem;
+}
+
+/* モーダル本体 */
+.modal {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0 0 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.field label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.field input,
+.field select {
+  padding: 0.7rem 0.9rem;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+  background: white;
+}
+
+.field input:focus,
+.field select:focus {
+  border-color: #4299e1;
+}
+
+/* 家賃と間取りを横並びに */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* エラーメッセージ */
+.error {
+  font-size: 0.875rem;
+  color: #c53030;
+  background: #fff5f5;
+  padding: 0.7rem 0.9rem;
+  border-radius: 6px;
+  border: 1px solid #fed7d7;
+}
+
+/* ボタン行 */
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.cancelButton {
+  padding: 0.65rem 1.25rem;
+  background: transparent;
+  color: #718096;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.cancelButton:hover {
+  border-color: #a0aec0;
+  color: #4a5568;
+}
+
+.submitButton {
+  padding: 0.65rem 1.5rem;
+  background: #4299e1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submitButton:hover:not(:disabled) {
+  background: #3182ce;
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

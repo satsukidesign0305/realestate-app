@@ -70,11 +70,18 @@
   padding: 2rem 1.5rem;
 }
 
+/* ページタイトル行: タイトル・件数と登録ボタンを左右に配置 */
 .pageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.pageTitleGroup {
   display: flex;
   align-items: baseline;
   gap: 0.75rem;
-  margin-bottom: 1.5rem;
 }
 
 .pageTitle {
@@ -87,6 +94,43 @@
 .count {
   font-size: 0.9rem;
   color: #a0aec0;
+}
+
+/* 物件登録ボタン */
+.addButton {
+  padding: 0.6rem 1.25rem;
+  background: #4299e1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.addButton:hover {
+  background: #3182ce;
+}
+
+/* エラーメッセージ */
+.error {
+  font-size: 0.875rem;
+  color: #c53030;
+  background: #fff5f5;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #fed7d7;
+  margin-bottom: 1.25rem;
+}
+
+/* 空状態メッセージ */
+.empty {
+  text-align: center;
+  color: #a0aec0;
+  margin-top: 4rem;
+  font-size: 0.95rem;
 }
 
 /* レスポンシブグリッドレイアウト */
