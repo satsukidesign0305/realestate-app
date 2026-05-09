@@ -1,0 +1,97 @@
+/* 物件一覧画面のスタイル */
+
+.wrapper {
+  min-height: 100vh;
+  background: #f7fafc;
+}
+
+/* 固定ヘッダー */
+.header {
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.headerInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.email {
+  font-size: 0.875rem;
+  color: #718096;
+}
+
+/* ログアウトボタン */
+.logoutButton {
+  padding: 0.5rem 1.25rem;
+  background: transparent;
+  color: #e53e3e;
+  border: 1.5px solid #e53e3e;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.logoutButton:hover:not(:disabled) {
+  background: #e53e3e;
+  color: white;
+}
+
+.logoutButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.pageHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.pageTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0;
+}
+
+.count {
+  font-size: 0.9rem;
+  color: #a0aec0;
+}
+
+/* レスポンシブグリッドレイアウト */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
