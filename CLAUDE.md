@@ -40,6 +40,11 @@ realestate-app/
 - `main` ブランチへの直接プッシュは避け、プルリクエスト経由でマージしてください。
 - プッシュ前に `git status` で変更内容を確認し、不要なファイル（`.env` 等）が含まれていないことを確かめてください。
 
+## デプロイ情報
+
+- 本番URL：https://realestate-app-alpha-drab.vercel.app
+- Supabaseプロジェクト名：realestate-app
+
 ## 連絡先
 
 質問や提案がある場合は、プロジェクトリーダーまたはチームメンバーに連絡してください。
